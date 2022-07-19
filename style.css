@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+    
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Splash screen */
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 2s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transform: ease-in-out 0.5s;
+}
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+body{
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh;
+    font-family: system-ui;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+    background: #fff;
+    color: #200016;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,#200016,transparent);
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(-80);
+
+}
+.orix{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: translateY(-180px);
+}
+.content{
+    color: #fff;
+    padding: 30px;
+
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+
+}
+.content p{
+    margin: 20px;
+}
