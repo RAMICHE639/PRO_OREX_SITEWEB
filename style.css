@@ -29,7 +29,7 @@ header h4 {
     left: 0;
     top: 0;
     width: 100%;
-    height: 350vh;
+    height: 100vh;
     background-color: #161616;
     transition: 2s;
 }
@@ -62,7 +62,7 @@ header h4 {
 
 body{
     background: linear-gradient(#200016,#10001f);
-    height: 100vh;
+    height: 350vh;
     font-family: system-ui;
 
 }
