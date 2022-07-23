@@ -243,3 +243,12 @@ header ul li a:hover, .active{
     width: -50x;
     margin-right: 50px;
 }
+footer p {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    color: #726a95;
+    margin: 10px 0;
+    position: relative;
+
+}
