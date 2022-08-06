@@ -137,6 +137,14 @@ header ul li a:hover, .active{
     text-transform: uppercase;
     transform: translateY(-180px);
 }
+.logoindex {
+    color: #fff;
+    font-weight: var(--fw-700);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
 .content{
     color: #fff;
     padding: 30px;
